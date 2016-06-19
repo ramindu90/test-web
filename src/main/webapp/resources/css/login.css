@@ -1,0 +1,30 @@
+.login-button-horizontal {
+    padding: 0;
+    border: none;
+    background: none;
+    display:block;
+    margin-bottom:2px;
+}
+
+.login-button-vertical {
+    padding: 0;
+    border: none;
+    background: none;
+    display:inline;
+    margin-bottom:2px;
+}
+
+.login-font {
+    display: inline;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    /*margin: 0;*/
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif,inherit;
+    padding: 0;
+    border: 0;
+    color: #666;
+    /*font-size: 100%;*/
+    /*font: inherit;*/
+    vertical-align: baseline;
+}
