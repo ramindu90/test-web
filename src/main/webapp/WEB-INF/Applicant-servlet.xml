@@ -1,22 +1,3 @@
-<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
-       <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
-       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans-->
-	<!--http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">-->
-
-    <!--<bean name="/welcome.htm"-->
-          <!--class="com.mlcr.jobfindfind.Sample" />-->
-
-    <!--<bean id="viewResolver"-->
-          <!--class="org.springframework.web.servlet.view.InternalResourceViewResolver" >-->
-        <!--<property name="prefix">-->
-            <!--<value>/WEB-INF/pages/</value>-->
-        <!--</property>-->
-        <!--<property name="suffix">-->
-            <!--<value>.jsp</value>-->
-        <!--</property>-->
-    <!--</bean>-->
-<!--</beans>-->
-
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -27,10 +8,10 @@
 
 <context:component-scan base-package="org.mlcr.jobfind.controller" />
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="prefix" value="/WEB-INF/pages/" />
         <property name="suffix" value=".jsp" />
     </bean>
-    <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <mvc:resources mapping="/resources/**" location="/META-INF/resources/"/>
     <mvc:annotation-driven />
 
 </beans>
