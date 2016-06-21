@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.ui.ModelMap;
 
-import org.mlcr.jobfind.database.mgt.impl.JobFindDataServiceImpl;
 
 @Controller
 //@RequestMapping(value = "/applicant")
@@ -28,18 +27,5 @@ public class ApplicantController {
         model.addAttribute("id", applicant.getId());
         return "result";
     }
-//
-//    @RequestMapping(value = "/addApplicant", method = RequestMethod.POST)
-//    public String registerApplicant(@ModelAttribute("SpringWeb")Applicant applicant, ModelMap model) {
-//        JobFindDataServiceImpl jobFindDataServiceImpl = new JobFindDataServiceImpl();
-//        return "result";
-//    }
-
-    //sample
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public ModelAndView login() {
-        return new ModelAndView("login", "command", new Applicant());
-    }
-
 
 }
