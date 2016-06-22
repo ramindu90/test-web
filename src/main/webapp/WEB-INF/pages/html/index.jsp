@@ -7,9 +7,11 @@
     <!--Spring-->
 
 	<!--CSS -->
-	<c:url value="/resources/css/style.css" var="styleCSS"/>
-	<c:url value="/resources/css/colors/green.css" var="greeCSS"/>
-	
+	<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+	<link href="<c:url value="/resources/css/colors/green.css" />" rel="stylesheet">
+	<!-- custom -->
+	<link href="<c:url value="/resources/css/custom/bootstrap.min.css" />" rel="stylesheet">
+
 	<!--Images-->
 	<c:url value="/resources/images/logo.png" var="logoImage"/>
     <c:url value="/resources/images/banner-home-01.jpg" var="bannerImage"/>
@@ -23,22 +25,25 @@
     <c:url value="/resources/images/recent-post-03.jpg" var="recent-post3Image"/>
 
 	<!--Scripts-->
-	<c:url value="/resources/scripts/jquery-2.1.3.min.js" var="jquery.min.js"/>
-	<c:url value="/resources/scripts/custom.js" var="custom.js"/>
-	<c:url value="/resources/scripts/jquery.superfish.js" var="jquery.superfish.js"/>
-	<c:url value="/resources/scripts/jquery.themepunch.tools.min.js" var="jquery.themepunch.tools.min.js"/>
-	<c:url value="/resources/scripts/jquery.themepunch.revolution.min.js" var="jquery.themepunch.revolution.min.js"/>
-	<c:url value="/resources/scripts/jquery.themepunch.showbizpro.min.js" var="jquery.themepunch.showbizpro.min.js"/>
-	<c:url value="/resources/scripts/jquery.flexslider-min.js" var="jquery.flexslider-min.js"/>
-	<c:url value="/resources/scripts/chosen.jquery.min.js" var="chosen.jquery.min.js"/>
-	<c:url value="/resources/scripts/jquery.magnific-popup.min.js" var="jquery.magnific-popup.min.js"/>
-	<c:url value="/resources/scripts/waypoints.min.js" var="waypoints.min.js"/>
-	<c:url value="/resources/scripts/jquery.counterup.min.js" var="jquery.counterup.min.js"/>
-	<c:url value="/resources/scripts/jquery.jpanelmenu.js" var="jquery.jpanelmenu.js"/>
-	<c:url value="/resources/scripts/stacktable.js" var="stacktable.js"/>
+	<script src="<c:url value="/resources/scripts/jquery-2.1.3.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/custom.js" />"></script>
+	<script src="<c:url value="/resources/scripts/jquery.superfish.js" />"></script>
+	<script src="<c:url value="/resources/scripts/jquery.themepunch.tools.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/jquery.themepunch.revolution.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/jquery.themepunch.showbizpro.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/jquery.flexslider-min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/chosen.jquery.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/jquery.magnific-popup.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/waypoints.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/jquery.counterup.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/jquery.jpanelmenu.js" />"></script>
+	<script src="<c:url value="/resources/scripts/stacktable.js" />"></script>
+	<!-- custom -->
+	<script src="<c:url value="/resources/scripts/custom/bootstrap.min.js" />"></script>
+
 
 	<!--Links-->
-	<c:url value="/resources/scripts/html5shiv.js" var="html5.js"/>
+	<script src="<c:url value="/resources/scripts/html5shiv.js" />"></script>
 
 	<!-- Basic Page Needs
     ================================================== -->
@@ -51,8 +56,6 @@
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="${styleCSS}">
-<link rel="stylesheet" href="${greeCSS}" id="colors">
 
 <!--[if lt IE 9]>
 	<!--script src="${html5.js}"></script>
@@ -124,8 +127,10 @@
 
 			<ul class="float-right">
 				<li><a href="${pageContext.request.contextPath}/login#tab2"><i class="fa fa-user"></i> Sign Up</a></li>
-				<li><a href="${pageContext.request.contextPath}/login"><i class="fa fa-lock"></i> Log In</a></li>
+				<%--<li><a href="${pageContext.request.contextPath}/login"><i class="fa fa-lock"></i> Log In</a></li>--%>
+				<li><a data-toggle="modal" href="#myModal"><i class="fa fa-lock"></i> Log In</a></li>
 			</ul>
+			<%--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>--%>
 
 		</nav>
 
@@ -520,20 +525,39 @@
 
 <!-- Scripts
 ================================================== -->
-<script src="${jquery.min.js}"></script>
-<script src="${custom.js}"></script>
-<script src="${jquery.superfish.js}"></script>
-<script src="${jquery.themepunch.tools.min.js}"></script>
-<script src="${jquery.themepunch.revolution.min.js}"></script>
-<script src="${jquery.themepunch.showbizpro.min.js}"></script>
-<script src="${jquery.flexslider-min.js}"></script>
-<script src="${chosen.jquery.min.js}"></script>
-<script src="${jquery.magnific-popup.min.js}"></script>
-<script src="${waypoints.min.js}"></script>
-<script src="${jquery.counterup.min.js}"></script>
-<script src="${jquery.jpanelmenu.js}"></script>
-<script src="${stacktable.js}"></script>
+<%--<script src="${jquery.min.js}"></script>--%>
+<%--<script src="${custom.js}"></script>--%>
+<%--<script src="${jquery.superfish.js}"></script>--%>
+<%--<script src="${jquery.themepunch.tools.min.js}"></script>--%>
+<%--<script src="${jquery.themepunch.revolution.min.js}"></script>--%>
+<%--<script src="${jquery.themepunch.showbizpro.min.js}"></script>--%>
+<%--<script src="${jquery.flexslider-min.js}"></script>--%>
+<%--<script src="${chosen.jquery.min.js}"></script>--%>
+<%--<script src="${jquery.magnific-popup.min.js}"></script>--%>
+<%--<script src="${waypoints.min.js}"></script>--%>
+<%--<script src="${jquery.counterup.min.js}"></script>--%>
+<%--<script src="${jquery.jpanelmenu.js}"></script>--%>
+<%--<script src="${stacktable.js}"></script>--%>
 
+<!-- Login Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Modal Header</h4>
+			</div>
+			<div class="modal-body">
+				<p>Some text in the modal.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+</div>
 
 
 </body>
