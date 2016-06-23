@@ -10,7 +10,8 @@
 	<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
 	<link href="<c:url value="/resources/css/colors/green.css" />" rel="stylesheet">
 	<!-- custom -->
-	<link href="<c:url value="/resources/css/custom/bootstrap.min.css" />" rel="stylesheet">
+	<link href="<c:url value="/resources/css/custom/bootstrap.css" />" rel="stylesheet">
+	<link href="<c:url value="/resources/css/custom/login.css" />" rel="stylesheet">
 
 	<!--Images-->
 	<c:url value="/resources/images/logo.png" var="logoImage"/>
@@ -40,6 +41,13 @@
 	<script src="<c:url value="/resources/scripts/stacktable.js" />"></script>
 	<!-- custom -->
 	<script src="<c:url value="/resources/scripts/custom/bootstrap.min.js" />"></script>
+	<script src="<c:url value="/resources/scripts/custom/socialLogin.js" />"></script>
+	<script src="https://apis.google.com/js/api:client.js"></script>
+	<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+		api_key: 751os35apk8hvv
+		//            onLoad: onLinkedInLoad
+		authorize: true
+	</script>
 
 
 	<!--Links-->
@@ -522,37 +530,70 @@
 </div>
 <!-- Wrapper / End -->
 
-
-<!-- Scripts
-================================================== -->
-<%--<script src="${jquery.min.js}"></script>--%>
-<%--<script src="${custom.js}"></script>--%>
-<%--<script src="${jquery.superfish.js}"></script>--%>
-<%--<script src="${jquery.themepunch.tools.min.js}"></script>--%>
-<%--<script src="${jquery.themepunch.revolution.min.js}"></script>--%>
-<%--<script src="${jquery.themepunch.showbizpro.min.js}"></script>--%>
-<%--<script src="${jquery.flexslider-min.js}"></script>--%>
-<%--<script src="${chosen.jquery.min.js}"></script>--%>
-<%--<script src="${jquery.magnific-popup.min.js}"></script>--%>
-<%--<script src="${waypoints.min.js}"></script>--%>
-<%--<script src="${jquery.counterup.min.js}"></script>--%>
-<%--<script src="${jquery.jpanelmenu.js}"></script>--%>
-<%--<script src="${stacktable.js}"></script>--%>
-
 <!-- Login Modal -->
 <div class="modal fade" id="myModal" role="dialog">
 	<div class="modal-dialog">
 		<!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Modal Header</h4>
+				<ul class="tabs-nav">
+					<li class="" ><a href="#registerTab" onclick="changeLoginView('toLogin')">Login</a></li>
+					<li><a href="#loginTab" onclick="changeLoginView('toRegister')">Register</a></li>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				</ul>
 			</div>
 			<div class="modal-body">
-				<p>Some text in the modal.</p>
+				<div class="tabs-container">
+					<!-- Login -->
+					<div class="tab-content" id="loginTab" style="display: none;">
+						<form method="post" class="login">
+							<p class="form-row form-row-wide">
+								<input type="text" class="input-text" name="username" id="username" placeholder="Username or Email Address" value="" />
+							</p>
+							<p class="form-row form-row-wide">
+								<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>
+							</p>
+							<p class="form-row form-row-wide">
+								<input type="submit" class="button" name="login" value="Login" />
+								<label for="rememberme" class="rememberme login-font">
+									<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
+							</p>
+							<p class="lost_password login-font">
+								<a href="#" >Lost Your Password?</a>
+							</p>
+						</form>
+					</div>
+
+					<!-- Register -->
+					<div class="tab-content" id="registerTab" style="display: none;">
+						<form method="post" class="register">
+							<p class="form-row form-row-wide">
+								<input type="email" class="input-text" name="reg_email" id="reg_email" value="" placeholder="Email Address"/>
+							</p>
+							<p class="form-row form-row-wide">
+								<input type="text" class="input-text" name="reg_username" id="reg_username" value="" placeholder="Username"/>
+							</p>
+							<p class="form-row form-row-wide">
+								<input type="password" class="input-text" name="password" id="reg_password" placeholder="Password"/>
+							</p>
+							<p class="form-row form-row-wide">
+								<input type="password" class="input-text" name="password" id="reg_password2" placeholder="Repeat Password"/>
+							</p>
+							<p class="form-row">
+								<input type="submit" class="button" name="register" value="Register" />
+							</p>
+
+						</form>
+					</div>
+				</div>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<div class="modal-footer" style="text-align: center;">
+				<div style="display: inline-block; margin: 0 auto;">
+					<button id='facebook' class="login-button-vertical" onclick="fbLogin()"><img src="<c:url value="/resources/images/login/facebookN.png"/>" /></button>
+					<button id="twitter" class="login-button-vertical" ><img src="<c:url value="/resources/images/login/twitterN.png"/>" /></button>
+					<button id="google" class="customGPlusSignIn login-button-vertical"><img src="<c:url value="/resources/images/login/gmailN.png"/>" /></button>
+					<button id="linkedin" class="login-button-vertical" onclick="liAuth()"><img src="<c:url value="/resources/images/login/linkedInN.png"/>" /></button>
+				</div>
 			</div>
 		</div>
 

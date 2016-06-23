@@ -28,3 +28,10 @@
     /*font: inherit;*/
     vertical-align: baseline;
 }
+
+.login-footer-hor-verti-align{
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    position:relative;
+}
