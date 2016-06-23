@@ -167,5 +167,15 @@ function linkedInSignout(){
 
 //LINKEDIN END
 
+function changeLoginView(changingView){
+    if('toRegister' == changingView){
+        document.getElementById('registerTab').style.display = 'block';
+        document.getElementById('loginTab').style.display = 'none';
+    } else {
+        document.getElementById('loginTab').style.display = 'block';
+        document.getElementById('registerTab').style.display = 'none';
+    }
+}
+
 
 

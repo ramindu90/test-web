@@ -1,0 +1,9 @@
+.login-popup-border {
+    border-radius: 0 !important;
+}
+
+.modal-footer-align-center {
+    padding: 15px;
+     text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
