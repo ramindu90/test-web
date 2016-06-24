@@ -7,3 +7,14 @@
      text-align: center;
     border-top: 1px solid #e5e5e5;
 }
+
+#specialism {
+    font-weight: 500;
+    font-size: 17px;
+    float: left;
+    box-sizing: border-box;
+    padding: 19px 20px;
+    border: none;
+    margin-right: 2%;
+    width: 29%;
+}
