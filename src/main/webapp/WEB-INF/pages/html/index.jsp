@@ -471,7 +471,7 @@
 
 <div id="footer">
 	<!-- Main -->
-	<div class="container">
+	<div class="container" id="mainFooterId">
 
 		<div class="seven columns">
 			<h4>About</h4>
