@@ -80,7 +80,8 @@
 	textarea,
 	.widget-text h5,
 	h3.centered-headline span,
-	select {
+	select,
+	#specialism {
 		font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 

@@ -159,23 +159,34 @@
 	<div class="container">
 		<div class="sixteen columns">
 			
-			<div class="search-container">
-
+			<div class="search-container-home">
 				<!-- Form -->
 				<h2>Find job</h2>
-				<input type="text" class="ico-01" placeholder="job title, keywords or company name" value=""/>
-				<input type="text" class="ico-02" placeholder="city, province or region" value=""/>
-				<button><i class="fa fa-search"></i></button>
+				<div id="specialism">
+					<!-- Select -->
+					<input type="text" class="ico-01" placeholder="job title, keywords or company name" value=""/>
+					<input type="text" class="ico-02" placeholder="city, province or region" value=""/>
+					<select data-placeholder="Choose Category" class="chosen-select-no-single-29-width">
+						<option selected="selected" value="recent">Newest</option>
+						<option value="oldest">Oldest</option>
+						<option value="expiry">Expiring Soon</option>
+						<option value="ratehigh">Hourly Rate – Highest First</option>
+						<option value="ratelow">Hourly Rate – Lowest First</option>
+					</select>
+					<button><i class="fa fa-search"></i></button>
+				</div>
+
+
 
 				<!-- Browse Jobs -->
-				<div class="browse-jobs">
-					Browse job offers by <a href="browse-categories.html"> category</a> or <a href="#">location</a>
-				</div>
+				<%--<div class="browse-jobs">--%>
+					<%--Browse job offers by <a href="browse-categories.html"> category</a> or <a href="#">location</a>--%>
+				<%--</div>--%>
 				
 				<!-- Announce -->
-				<div class="announce">
-					We’ve over <strong>15 000</strong> job offers for you!
-				</div>
+				<%--<div class="announce">--%>
+					<%--We’ve over <strong>15 000</strong> job offers for you!--%>
+				<%--</div>--%>
 
 			</div>
 

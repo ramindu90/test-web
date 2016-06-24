@@ -201,6 +201,7 @@
           '.chosen-select'           : {disable_search_threshold: 10, width:"100%"},
           '.chosen-select-deselect'  : {allow_single_deselect:true, width:"100%"},
           '.chosen-select-no-single' : {disable_search_threshold:10, width:"100%"},
+          '.chosen-select-no-single-29-width' : {width:"29%", float:"left"},
           '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
           '.chosen-select-width'     : {width:"95%"}
         };
