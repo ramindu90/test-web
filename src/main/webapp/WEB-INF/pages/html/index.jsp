@@ -566,6 +566,8 @@
 							</p>
 							<p class="form-row form-row-wide">
 								<input type="submit" class="button" name="login" value="Login" />
+							</p>
+							<p class="form-row">
 								<label for="rememberme" class="rememberme login-font">
 									<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
 							</p>
