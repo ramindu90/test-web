@@ -28,5 +28,10 @@ public class NavigationController {
         return "html/my-account";
     }
 
+    @RequestMapping(value = "/jobfinder/information", method = RequestMethod.GET)
+    public String getJobfinderInformationForm() {
+        return "html/add-jobFinder-info";
+    }
+
 
 }

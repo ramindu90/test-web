@@ -18,3 +18,8 @@
     margin-right: 2%;
     width: 29%;
 }
+
+a.button.cancelButton , a.button.cancelButton {
+    background-color: #a1a2a4 !important;
+    color: #000000 !important;
+}

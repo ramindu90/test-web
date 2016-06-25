@@ -865,6 +865,20 @@ table.manage-table th {
 	margin-left: 33px !important;
 }
 
+div#educationalInfoDiv  table.manage-table th {
+	background-color: #f6f6f6;
+	text-align: left;
+	padding: 4px 20px 4px 40px;
+	color: #7d7d7d;
+	vertical-align: top;
+	font-size: 13px;
+	font-weight: 600;
+	position: relative;
+	z-index: 9;
+	line-height: 22px;
+	margin-left: 33px !important;
+}
+
 table.manage-table th i { position: absolute; left: 17px; top: 21px; }
 
 table.manage-table a.button {
@@ -899,7 +913,10 @@ table.manage-table tr:hover td {
 }
 
 /* Resumes Table Styles */
-table.manage-table.resumes td { padding: 30px 20px; } 
+table.manage-table.resumes td { padding: 30px 20px; }
+
+div#educationalInfoDiv table.manage-table.resumes td { padding: 15px 20px; }
+
 
 table td.title a {
 	font-weight: 600;
