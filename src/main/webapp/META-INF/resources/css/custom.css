@@ -1,0 +1,537 @@
+.employer {
+    background-color: #ffffff;
+    border: 2px solid #929090;
+}
+
+.normal-font {
+
+}
+
+.specialism-search .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    /*white-space: nowrap;*/
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #ffffff none repeat scroll 0 0;
+    border: 0;
+    border-radius: 0;
+    height: inherit;
+    color: #929090;
+}
+
+#login-modal .nav > li > a:hover {
+    background-color: #0096cc;
+    color: #ffffff;
+}
+
+#login-modal .nav-tabs > li > a:hover {
+    border-color: #0096cc;
+    color: #ffffff;
+}
+
+#login-modal .form-inline input[type=submit]:hover {
+    background: #0096cc;
+    color: #ffffff;
+}
+
+#login-modal .form-inline input[type=submit] {
+    background: #f0f0f0;
+    color: #000000;
+    height: 40px;
+    width: 90px;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 16px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#show-more-jobs-btn {
+    display: inline-block !important;
+    text-align: center;
+}
+
+#login-modal .form-inline .form-group {
+    display: block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.general-text-input.form-control {
+    border-radius: 0 !important;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    height: 50px;
+    margin-top: 5px;
+    /*width: 350px;*/
+}
+
+#login-username.general-text-input.form-control, #reg_email.general-text-input.form-control {
+    margin-top: 10px;
+}
+
+.login-button-vertical {
+    padding: 0;
+    border: none;
+    background: none;
+    display: inline;
+    margin-bottom: 2px;
+}
+
+#login-modal .modal-content {
+    width: 380px;
+}
+
+.sub-slider-area {
+    position: relative;
+    height: 150px
+}
+
+.sub-slider-area #sub-bg-slider .item img {
+    width: 100%;
+    height: 150px
+}
+
+.browse-btn {
+    display: block;
+    width: 140px;
+    border-left: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+label {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+#resume-section label {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.resume-text-input-long.general-text-input.form-control {
+    width: inherit;
+}
+
+.resume-text-input-short.general-text-input.form-control {
+    /*width: 382px;*/
+}
+
+.specialism-search .resume-text-select-short.form-control {
+    margin-top: 5px;
+    /*width: 382px;*/
+    height: 50px;
+    border-radius: 0 !important;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    display: block;
+}
+
+.specialism-search .resume-text-select-short .btn {
+    padding: 0 12px;
+    height: 47px;
+}
+
+.larger-editor {
+    padding: 10px;
+    background: #FFF;
+    min-height: 100px;
+    max-height: 900px;
+    overflow: auto;
+    outline: none;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+    resize: vertical;
+    border: 1px solid #ccc;
+    width: inherit;
+}
+
+.add-education-btn {
+    display: block;
+    width: 300px;
+    border-left: 10px;
+    font-size: 15px;
+}
+
+#educationInfoTable th {
+    /*text-align: center;*/
+}
+
+#workInfoTable th {
+    /*text-align: center;*/
+}
+
+/*#dashboard-nav-side-menu{*/
+/*position:fixed;*/
+/*top:280px;*/
+/*}*/
+
+a.clickable-anchor:hover {
+    cursor: pointer;
+}
+
+.row.footer-copy {
+    text-align: center;
+}
+
+.row.footer-copy p {
+    padding-top: 10px;
+}
+
+.collapse.navbar-collapse {
+    margin-left: 130px;
+    /*margin-right: 140px;*/
+}
+
+.information-table.table tr td a {
+    color: #929090;
+    /* background: #0096cc; */
+    background-color: #ffffff;
+    padding: 5px 5px;
+    /* border-radius: 5px; */
+    font-size: 13px;
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid #929090;
+}
+
+.information-table.table tr td p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.information-table.table tr.odd {
+    background: #fafafa;
+}
+.information-table.table tr.even {
+    background: #FFFFFF;
+}
+
+.information-table.table tr:hover td a:hover {
+    /* background: #fff; */
+    /* color: #0096cc; */
+}
+
+.information-table.table tr:hover td a {
+    /* background: #00aaa5; */
+}
+
+.information-table.table {
+    /*background: #e9e9e9;*/
+    /*border: 1px solid #929090;*/
+}
+
+.information-table.table th {
+    border-bottom: 2px solid #929090;
+    font-size: x-small !important;
+    text-transform: uppercase !important;
+}
+
+.information-table.table .action {
+    width: 80px;
+}
+
+.information-table.table tr:hover th {
+    /*background: #aa2633;*/
+}
+
+.main-page-applied-shortlisted-jobs-table.table.main-page-jobs-table tr td h4{
+    margin-bottom: 10px;
+}
+
+.main-page-applied-shortlisted-jobs-table.table.main-page-jobs-table p{
+    margin: 0 0 4px;
+}
+
+.update-education-btn {
+    display: block;
+    width: 250px;
+    border-left: 10px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.update-information-btn {
+    display: block;
+    width: 300px;
+    margin-left: 15px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.job-icons span {
+    margin-bottom: 8px;
+}
+
+.second-section-dashboard {
+    margin-top: 20px;
+}
+
+.main-page-jobs-table.table tr.odd {
+    background: #fafafa
+}
+
+.main-page-jobs-table.table tr.even {
+    background: #FFFFFF
+}
+
+.main-page-jobs-table.table tr:hover {
+    border-bottom: 1px solid #0096cc;
+    border-top: 1px solid #0096cc;
+    background: #f8ffff;
+    color: #666666
+}
+
+.main-page-jobs-table.table tr {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+
+.job-type-btn {
+    border: medium none;
+    color: #fff;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    min-width: 115px;
+    padding: 1px 15px;
+    text-align: center;
+    width:100px !important;
+}
+
+.main-page-jobs-table .job-type-green {
+    border: solid 1px #478723;
+    color: #478723;
+    background: #ffffff !important;
+    padding: 5px 15px;
+}
+
+.main-page-jobs-table a.job-type-green:hover {
+    border: solid 1px #6ab73f;
+    color: #6ab73f;
+    background: #ffffff !important;
+    padding: 5px 15px;
+}
+
+.main-page-jobs-table .job-type-blue {
+    border: solid 1px #4288c9;
+    color: #4288c9;
+    background: #ffffff !important;
+    padding: 5px 15px;
+}
+
+.main-page-jobs-table a.job-type-blue:hover {
+    border: solid 1px #59afff;
+    color: #59afff;
+    background: #ffffff !important;
+    padding: 5px 15px;
+}
+
+.main-page-jobs-table .job-type-red {
+    border: solid 1px #ef4b39;
+    color: #ef4b39;
+    background: #ffffff !important;
+    padding: 5px 15px;
+}
+
+.main-page-jobs-table a.job-type-red:hover {
+    border: solid 1px #ff9084;
+    color: #ff9084;
+    background: #ffffff !important;
+    padding: 5px 15px;
+}
+
+.main-page-jobs-table .job-type-dark-yellow {
+    border: solid 1px #dc932b;
+    color: #dc932b;
+    background: #ffffff !important;
+    padding: 5px 15px;
+}
+
+.main-page-jobs-table a.job-type-dark-yellow:hover {
+    border: solid 1px #eabc7b;
+    color: #eabc7b;
+    background: #ffffff !important;
+    padding: 5px 15px;
+}
+
+/* ---------------------------------- */
+/* Notification Boxes
+------------------------------------- */
+.success,
+.notification {
+    line-height: 24px;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 22px 26px;
+    margin-left: 15px;
+}
+
+.notification p {
+    margin: 0;
+}
+
+.notification span {
+    font-weight: 600;
+}
+
+.success,
+.notification.success,
+.notification.success a,
+.notification.success strong {
+    background-color: #EBF6E0;
+    color: #5f9025;
+}
+
+.notification.error,
+.notification.error a,
+.notification.error strong {
+    background-color: #ffe9e9;
+    color: #de5959;
+}
+
+.notification.warning,
+.notification.warning a,
+.notification.warning strong {
+    background-color: #FBFADD;
+    color: #8f872e;
+}
+
+.notification.notice,
+.notification.notice a,
+.notification.notice strong {
+    background-color: #E9F7FE;
+    color: #4587a9;
+}
+
+.notification strong {
+    border: none !important;
+}
+
+/*.notification.success .close,*/
+/*.notification.error .close,*/
+/*.notification.warning .close,*/
+/*.notification.notice .close {*/
+    /*padding: 0px 9px;*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 22px;*/
+    /*display: block;*/
+    /*height: 8px;*/
+    /*width: 8px;*/
+    /*cursor: pointer;*/
+/*}*/
+
+.notification.notice p span i {
+    font-weight: 500;
+}
+
+.notification a.button {
+    float: right;
+    color: #fff;
+    margin-top: 3px;
+}
+
+.notification.notice a.button {
+    background-color: #388fc5;
+}
+
+.notification.warning a.button {
+    background-color: #dfbe51;
+}
+
+.notification.error a.button {
+    background-color: #d34c4c;
+}
+
+.notification.success a.button {
+    background-color: #79ba38;
+}
+
+#cv-browse-button {
+    margin-top: 8px;
+    margin-left: 0;
+    width: 150px;
+}
+
+span.full-time { background-color: #186fc9; }
+span.part-time { background-color: #f1630d; }
+span.freelance { background-color: #53b427; }
+span.internship { background-color: #e1d123; }
+span.temporary { background-color: #e12335; }
+
+.next-to-button-notification {
+    padding: 18px 26px;
+    line-height: 7px;
+    float: left;
+    margin-top: 8px;
+}
+
+.add-more {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    text-decoration: underline;
+    vertical-align: middle;
+    color: #0096cc !important;
+}
+
+.div-close-icon {
+    line-height: 12px;
+    width: 18px;
+    font-size: 8pt;
+    margin-top: 1px;
+    margin-right: 2px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.resume-upload-section {
+    display: inline;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-right: 15px !important;
+    margin-left: 15px;
+}
+
+.custom-notification {
+    background-color: #FBFADD;
+    color: #8f872e;
+    padding: 22px 26px;
+}
+
+

@@ -1,0 +1,475 @@
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Job Find</title>
+    <meta name="description" content="company is a free job board template">
+    <meta name="author" content="Ohidul">
+    <meta name="keyword" content="html, css, bootstrap, job-board">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--CSS -->
+    <link href="<c:url value="/resources/css/normalize.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/font-awesome.min.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/fontello.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/animate.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/owl.theme.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/owl.carousel.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/owl.transitions.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/responsive.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/bootstrap-select.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/custom.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/jasny-bootstrap.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/normalize.css" />" rel="stylesheet">
+
+    <!--Scripts-->
+    <script src="<c:url value="/resources/js/vendor/modernizr-2.6.2.min.js" />"></script>
+    <script src="<c:url value="/resources/js/vendor/jquery-1.10.2.min.js" />"></script>
+    <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+    <script src="<c:url value="/resources/js/bootstrap-select.js" />"></script>
+    <script src="<c:url value="/resources/js/owl.carousel.min.js" />"></script>
+    <script src="<c:url value="/resources/js/wow.js" />"></script>
+    <script src="<c:url value="/resources/js/main.js" />"></script>
+    <script src="<c:url value="/resources/js/custom/socialLogin.js" />"></script>
+    <script src="<c:url value="/resources/js/custom/custom.js" />"></script>
+    <script src="<c:url value="/resources/js/jasny-bootstrap.js" />"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <!--Images-->
+    <c:url value="/resources/images/logo.png" var="logoImage"/>
+    <c:url value="/resources/img/banners/black-and-white-city-man-people.jpg" var="bannerImage1"/>
+    <c:url value="/resources/img/banners/pexels-photo-47425.jpeg" var="bannerImage2"/>
+    <c:url value="/resources/img/banners/space-desk-workspace-coworking.jpg" var="bannerImage3"/>
+    <c:url value="/resources/img/job-logo1.png" var="jobLogo1"/>
+    <c:url value="/resources/img/client-face1.png" var="clientFace1"/>
+    <c:url value="/resources/img/client-face2.png" var="clientFace2"/>
+    <c:url value="/resources/img/footer-logo.png" var="footerLogo"/>
+    <c:url value="/resources/img/login/facebookN.png" var="facebookN"/>
+    <c:url value="/resources/img/login/twitterN.png" var="twitterN"/>
+    <c:url value="/resources/img/login/gmailN.png" var="gmailN"/>
+    <c:url value="/resources/img/login/linkedInN.png" var="linkedInN"/>
+
+</head>
+<body>
+
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<!-- Body content -->
+
+<nav class="navbar navbar-default ">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" id="menu-toggle"  data-target="#main-navigation-bar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="${logoImage}" alt=""></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-navigation-bar">
+            <div class="navbar-right">
+                <button class="navbar-btn nav-button wow" data-wow-delay="0.6s"><i class="fa fa-lock"></i> Sign up
+                </button>
+                <button class="navbar-btn nav-button wow login" data-wow-delay="0.8s" data-toggle="modal"
+                        href="#login-modal"><i class="fa fa-user"></i> Login
+                </button>
+                <button class="navbar-btn nav-button wow employer" data-wow-delay="0.2s">Employer Site</button>
+            </div>
+            <div class="navbar-nav">
+                <button class="navbar-btn nav-button wow" data-wow-delay="0.6s" onclick="location.href='http://localhost:8080/JobFind/browse-jobs-page'">Browse Jobs</button>
+                <button class="navbar-btn nav-button wow" data-wow-delay="0.6s">Blog</button>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="slider-area">
+    <div class="slider">
+        <div id="bg-slider" class="owl-carousel owl-theme">
+            <div class="item"><img src="${bannerImage1}" alt="Mirror Edge"></div>
+            <div class="item"><img src="${bannerImage2}" alt="The Last of us"></div>
+            <div class="item"><img src="${bannerImage3}" alt="GTA V"></div>
+        </div>
+    </div>
+    <div class="container slider-content">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                <h2>Job Searching Just Got So Easy</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi
+                    sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</p>
+                <div class="main-search-bar search-form wow pulse" data-wow-delay="0.8s">
+                    <form action="" class=" form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control main-search" placeholder="Job Key Word">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control main-search" placeholder="Job Key Word">
+                        </div>
+                        <div class="form-group specialism-search">
+                            <select class="form-control main-search selectpicker" data-show-subtext="true"
+                                    data-live-search="true">
+                                <option value="" disabled selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="search-button form-control main-search"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-area">
+
+    <div class="container">
+        <div class="row page-title text-center wow bounce" data-wow-delay="0.1s">
+            <h2><span>54716</span> Available jobs for you</h2>
+            <h5>Recent Jobs</h5>
+        </div>
+        <div class="jobs  hidden-xs">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table main-page-jobs-table">
+                        <tbody>
+                        <tr class="even col-md-6 test">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-green clickable-anchor">Volunteer</a></td>
+                            <!--<td class="col-md-3"><p><i class="fa fa-briefcase"></i>WSO2 Inc.</p> <p><i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA</p> <p>&dollar; 14000</p></td>-->
+
+                        </tr>
+                        <tr class="even col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-blue clickable-anchor">Part time</a></td>
+                        </tr>
+                        <tr class="odd col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-red clickable-anchor">Full time</a></td>
+                        </tr>
+                        <tr class="odd col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-dark-yellow clickable-anchor">Internship</a></td>
+                        </tr>
+                        <tr class="even col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-red clickable-anchor">Full time</a></td>
+                        </tr>
+                        <tr class="even col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-dark-yellow clickable-anchor">Internship</a></td>
+                        </tr>
+                        <tr class="odd col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-blue clickable-anchor">Part time</a></td>
+                        </tr>
+                        <tr class="odd col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-dark-yellow clickable-anchor">Internship</a></td>
+                        </tr>
+                        <tr class="even col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-blue clickable-anchor">Part time</a></td>
+                        </tr>
+                        <tr class="even col-md-6">
+                            <td class="col-md-1"><img src="${jobLogo1}" alt="" width="50px" height="50px"></td>
+                            <td class="tbl-title col-md-8"><h4>Web Designer</h4> <p><i class="fa fa-briefcase"></i>WSO2 Inc. &nbsp;&nbsp;&nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>San Franciso, USA &nbsp;&nbsp;&nbsp; &dollar; 14000</p></td>
+                            <td class="tbl-title col-md-2"><a class="job-type-btn job-type-red clickable-anchor">Full time</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="row col-md-4 col-md-offset-4">
+                <button id="show-more-jobs-btn" class="wow navbar-btn nav-button show-more"><a href="#"><i
+                        class="fa fa-plus-circle"></i>Show More Jobs</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infobox -->
+    <div class="infobox">
+        <div class="container test-center">
+            <div class="col-md-7 col-md-offset-1 col-md-7 col-xs-6 infobox-text">Start Building Your Own Job Board Now
+            </div>
+            <div class="col-md-2 col-xs-3 infobox-button">
+                <a href="${pageContext.request.contextPath}/login">Get Started</a></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row page-title text-center  wow bounce" data-wow-delay=".7s">
+            <h5>TESTIMONIALS</h5>
+            <h2>WHAT PEOPLES ARE SAYING</h2>
+        </div>
+        <div class="row testimonial">
+            <div class="col-md-12">
+                <div id="testimonial-slider">
+                    <div class="item">
+                        <div class="client-text">
+                            <p>Jobify offer an amazing service and I couldn’t be happier! They
+                                are dedicated to helping recruiters find great candidates, wonderful service!</p>
+                            <h4><strong>Ohidul Islam, </strong><i>Web Designer</i></h4>
+                        </div>
+                        <div class="client-face wow fadeInRight" data-wow-delay=".9s">
+                            <img src="${clientFace1}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-text">
+                            <p>Jobify offer an amazing service and I couldn’t be happier! They
+                                are dedicated to helping recruiters find great candidates, wonderful service!</p>
+                            <h4><strong>Ohidul Islam, </strong><i>Web Designer</i></h4>
+                        </div>
+                        <div class="client-face">
+                            <img src="${clientFace2}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-text">
+                            <p>Jobify offer an amazing service and I couldn’t be happier! They
+                                are dedicated to helping recruiters find great candidates, wonderful service!</p>
+                            <h4><strong>Ohidul Islam, </strong><i>Web Designer</i></h4>
+                        </div>
+                        <div class="client-face">
+                            <img src="${clientFace1}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-text">
+                            <p>Jobify offer an amazing service and I couldn’t be happier! They
+                                are dedicated to helping recruiters find great candidates, wonderful service!</p>
+                            <h4><strong>Ohidul Islam, </strong><i>Web Designer</i></h4>
+                        </div>
+                        <div class="client-face">
+                            <img src="${clientFace2}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="footer-area">
+    <div class="container">
+        <div class="row footer">
+            <div class="col-md-4">
+                <div class="single-footer">
+                    <img src="${footerLogo}" alt="" class="wow pulse" data-wow-delay="1s">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati architecto quaerat facere
+                        blanditiis tempora sequi nulla accusamus, possimus cum necessitatibus suscipit quia autem
+                        mollitia, similique quisquam molestias. Vel unde, blanditiis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-footer">
+                    <h4>Twitter update</h4>
+                    <div class="twitter-updates">
+                        <div class="single-tweets">
+                            <h5>ABOUT 9 HOURS</h5>
+                            <p><strong>AGOMeet Aldous</strong> - a Brave New World for #rails with more cohesion, less
+                                coupling and greater dev speed <a
+                                        href="http://t.co/rsekglotzs">http://t.co/rsekglotzs</a></p>
+                        </div>
+                        <div class="single-tweets">
+                            <h5>ABOUT 9 HOURS</h5>
+                            <p><strong>AGOMeet Aldous</strong> - a Brave New World for #rails with more cohesion, less
+                                coupling and greater dev speed <a
+                                        href="http://t.co/rsekglotzs">http://t.co/rsekglotzs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-footer">
+                    <h4>Useful lnks</h4>
+                    <div class="footer-links">
+                        <ul class="list-unstyled">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="" class="active">Services</a></li>
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Customers Testimonials</a></li>
+                            <li><a href="">Affliate</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-copy">
+            <p><span>(C) website, All rights reserved</span> | <span>Graphic Designed by <a
+                    href="#">Job Find</a></span> | <span> Web Designed by <a
+                    href="#">Job Find</a></span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="login-modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <ul class="nav nav-tabs" data-tabs="tabs" id="login-nav-tabs">
+                    <li class="active"><a href="#loginTab" data-toggle="tab">Login</a></li>
+                    <li><a href="#registerTab" data-toggle="tab">Register</a></li>
+                    <!--<button class="navbar-btn nav-button wow active" data-wow-delay="0.6s" href="#registerTab" onclick="changeLoginView('toLogin')" >Login</button>-->
+                    <!--<button class="navbar-btn nav-button wow" data-wow-delay="0.6s" href="#loginTab" onclick="changeLoginView('toRegister')">Register</button>-->
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="float:right">×</button>
+                </ul>
+
+                <div class="tab-content">
+                    <!-- Login -->
+                    <div class="tab-pane active" id="loginTab">
+                        <form action="" class= "form-inline">
+                            <div class="form-group">
+                                <input type="text" class="general-text-input form-control" name="username" id="login-username" placeholder="Username or Email Address" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input class="general-text-input form-control" type="password" name="password" id="password" placeholder="Password"/>
+                            </div>
+                            <div id="specialism-search1" class="form-group">
+                                <input type="submit" class="navbar-btn nav-button wow" name="login" value="Login" />
+                            </div>
+                            <div class="form-group">
+                                <label for="rememberme" class="rememberme login-font">
+                                    <input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
+                            </div>
+                            <div class="form-group">
+                                <p class="lost_password login-font">
+                                    <a href="#" >Lost Your Password?</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Register -->
+                    <div class="tab-pane" id="registerTab">
+                        <form action="" class= "form-inline">
+                            <div class="form-group">
+                                <input type="email" class="general-text-input form-control" name="reg_email" id="reg_email" value="" placeholder="Email Address"/>
+                            </div>
+                                <div class="form-group">
+                                <input type="text" class="general-text-input form-control" name="reg_username" id="reg_username" value="" placeholder="Username"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="general-text-input form-control" name="password" id="reg_password" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="general-text-input form-control" name="password" id="reg_password2" placeholder="Repeat Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="navbar-btn nav-button wow" name="register" value="Register" />
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div style="display: inline-block; margin: 0 auto;">
+                    <button id='facebook' class="login-button-vertical" onclick="fbLogin()"><img src="${facebookN}"/></button>
+                    <button id="twitter" class="login-button-vertical" ><img src="${twitterN}"/></button>
+                    <button id="google" class="customGPlusSignIn login-button-vertical"><img src="${gmailN}"/></button>
+                    <button id="linkedin" class="login-button-vertical" onclick="liAuth()"><img src="${linkedInN}"/></button>
+                </div>
+
+                <!--<div class="tabs-container">-->
+                    <!-- Login -->
+                    <!--<div class="tab-content" id="loginTab" style="display: none;">-->
+                        <!--<form action="" class= "form-inline">-->
+                            <!--<div class="form-group">-->
+                                <!--<input type="text" class="input-text" name="username" id="username" placeholder="Username or Email Address" value="" />-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>-->
+                            <!--</div>-->
+                            <!--<div id="specialism-search1" class="form-group">-->
+                                <!--<input type="submit" class="navbar-btn nav-button wow" name="login" value="Login" />-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<label for="rememberme" class="rememberme login-font">-->
+                                    <!--<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<p class="lost_password login-font">-->
+                                    <!--<a href="#" >Lost Your Password?</a>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</form>-->
+                    <!--</div>-->
+
+                    <!--&lt;!&ndash; Register &ndash;&gt;-->
+                    <!--<div class="tab-content" id="registerTab" style="display: none;">-->
+                        <!--<form method="post" class="register">-->
+                            <!--<p class="form-row form-row-wide">-->
+                                <!--<input type="email" class="input-text" name="reg_email" id="reg_email" value="" placeholder="Email Address"/>-->
+                            <!--</p>-->
+                            <!--<p class="form-row form-row-wide">-->
+                                <!--<input type="text" class="input-text" name="reg_username" id="reg_username" value="" placeholder="Username"/>-->
+                            <!--</p>-->
+                            <!--<p class="form-row form-row-wide">-->
+                                <!--<input type="password" class="input-text" name="password" id="reg_password" placeholder="Password"/>-->
+                            <!--</p>-->
+                            <!--<p class="form-row form-row-wide">-->
+                                <!--<input type="password" class="input-text" name="password" id="reg_password2" placeholder="Repeat Password"/>-->
+                            <!--</p>-->
+                            <!--<p class="form-row">-->
+                                <!--<input type="submit" class="button" name="register" value="Register" />-->
+                            <!--</p>-->
+
+                        <!--</form>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            <!--<div class="modal-footer" style="text-align: center;">-->
+                <!--<div style="display: inline-block; margin: 0 auto;">-->
+                    <!--<button id='facebook' class="login-button-vertical" onclick="fbLogin()"><img src="img/login/facebookN.png"/>"</button>-->
+                    <!--<button id="twitter" class="login-button-vertical" ><img src="img/login/twitterN.png"/>"</button>-->
+                    <!--<button id="google" class="customGPlusSignIn login-button-vertical"><img src="img/login/gmailN.png"/></button>-->
+                    <!--<button id="linkedin" class="login-button-vertical" onclick="liAuth()"><img src="img/login/linkedInN.png"/>"</button>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

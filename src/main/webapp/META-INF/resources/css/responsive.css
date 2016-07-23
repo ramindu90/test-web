@@ -1,247 +1,724 @@
-﻿/*
-* Based on Skeleton by Dave Gamache (www.getskeleton.com)
-* Modified by Vasterad
-*/
+@media (max-width: 480px){
+
+.header-call p span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+.header-call p span i {
+  font-size: 14px;
+}
+.header-social ul{
+	padding-top: 0px;
+}
+.header-social ul li a {
+  font-size: 12px;
+}
+.navbar .container {
+  padding: 10px 15px;
+}
+.navbar {
+  min-height: 75px;
+}
+.navbar-collapse {
+  margin-top: 15px;
+}
+.navbar-brand img {
+  width: 110px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 13px;
+}
+.nav-button {
+  font-size: 13px;
+  padding: 6px 13px;
+}
+.navbar-nav > li > a {
+  padding-left: 15px;
+  padding-right: 6px;
+}
+.main-nav {
+  padding-top: 4px;
+}
+.navbar-default .navbar-nav > li > a.active::after {
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+}
+.navbar-default .navbar-nav > li > a::after {
+  bottom: -2px;
+  height: 2px;
+}
+.slider-area .container{
+	padding: 0 50px
+}
 
 
-/* Table of Contents
-==================================================
-    #Base (1180 Grid)
-    #Desktop (960 Grid)
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
-    
-    
-/* #Base (1180 Grid)
-================================================== */
+.slider-content {
+  margin-left: -53%;
+}
+.slider-content h2 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+.slider-content p {
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+.search-form {
+  padding: 20px 30px;
+}
+.form-inline .form-control, .form-inline .form-control {
+  height: 30px;
+  width: 100%;
+}
+.form-inline input[type="submit"] {
+  height: 30px;
+  width: 100%
+}
+.slider-content {
+  top: 5%;
+}
+.slider-area{
+	height:440px;
+}
+#bg-slider .item img {
+  height: 440px;
+}
+.slider .owl-pagination {
+  bottom: 165px;
+  right: 0;
+  width: 30px;
+}
+.page-title{
+	padding-top: 50px;
+}
+.page-title h2 {
+  font-size: 20px;
+  margin-top: 2px;
+}
 
-    .container                                  { position: relative; width: 1200px; margin: 0 auto; padding: 0; }
-    .container .column,
-    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
-    .row                                        { margin-bottom: 20px; }
+.page-title h5 {
+  font-size: 12px;
+}
+.page-title p {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 10px;
+  padding: 0 5%
+}
+.single-work {
+  padding: 20px 0 40px;
+}
+.single-work img {
+  width: 60px;
+}
+.single-work h3 {
+  font-size: 18px;
+}
+.single-work p {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.job-posting{
+	padding: 20px 0px 0px 30px
+}
+.nav > li > a {
+  padding: 8px 10px;
+}
+.nav-tabs > li > a {
+  font-size: 12px;
+}
+.tab-content ul li {
+  height: 235px;
+  margin-bottom: 20px;
+  width: 219px;
+}
+.tab-content ul li a img {
+  height: 100%;
+  width: 100%;
+}
+.overlay {
+  height: 235px;
+  top: -104px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
 
-    /* Nested Column Classes */
-    .column.alpha, .columns.alpha               { margin-left: 0; }
-    .column.omega, .columns.omega               { margin-right: 0; }
-
-    /* Base Grid */
-    .container .one.column,
-    .container .one.columns                     { width: 55px;  }
-    .container .two.columns                     { width: 130px; }
-    .container .three.columns                   { width: 205px; }
-    #mainFooterId .three.columns     { width: 180px; }
-    .container .four.columns                    { width: 280px; }
-    .container .five.columns                    { width: 355px; }
-    .container .six.columns                     { width: 430px; }
-    .container .seven.columns                   { width: 505px; }
-    .container .eight.columns                   { width: 580px; }
-    .container .nine.columns                    { width: 655px; }
-    .container .ten.columns                     { width: 730px; }
-    .container .eleven.columns                  { width: 805px; }
-    .container .twelve.columns                  { width: 880px; }
-    .container .thirteen.columns                { width: 955px; }
-    .container .fourteen.columns                { width: 1030px; }
-    .container .fifteen.columns                 { width: 1105px; }
-    .container .sixteen.columns                 { width: 1180px; }
-
-    .container .one-third.column                { width: 380px; }
-    .container .two-thirds.column               { width: 780px; }
-
-    body.boxed                                  { width: 1340px; }
-
-    @media only screen and (min-width: 1289px) and (max-width: 1360px) {
-        body.boxed { width: 100%; }
-    }
-    
-
-/* #Dekstop (960 Grid)
-================================================== */
-
-    /* Note: Design for a width of 960px */
-
-    @media only screen and (min-width: 960px) and (max-width: 1289px) {
-        .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
-        .container .column,
-        .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
-        .row                                        { margin-bottom: 20px; }
-
-        /* Nested Column Classes */
-        .column.alpha, .columns.alpha               { margin-left: 0; }
-        .column.omega, .columns.omega               { margin-right: 0; }
-
-        /* Base Grid */
-        .container .one.column,
-        .container .one.columns                     { width: 40px;  }
-        .container .two.columns                     { width: 100px; }
-        .container .three.columns                   { width: 160px; }
-        .container .four.columns                    { width: 220px; }
-        .container .five.columns                    { width: 280px; }
-        .container .six.columns                     { width: 340px; }
-        .container .seven.columns                   { width: 400px; }
-        .container .eight.columns                   { width: 460px; }
-        .container .nine.columns                    { width: 520px; }
-        .container .ten.columns                     { width: 580px; }
-        .container .eleven.columns                  { width: 640px; }
-        .container .twelve.columns                  { width: 700px; }
-        .container .thirteen.columns                { width: 760px; }
-        .container .fourteen.columns                { width: 820px; }
-        .container .fifteen.columns                 { width: 880px; }
-        .container .sixteen.columns                 { width: 940px; }
-
-        .container .one-third.column                { width: 300px; }
-        .container .two-thirds.column               { width: 620px; }
-
-        body.boxed { width: 1060px; }
-
-    }
-
-    @media only screen and (max-width: 1080px) {
-        body.boxed { width: 100%; }
-    }
-
-
-/* #Tablet (Portrait)
-================================================== */
-
-    /* Note: Design for a width of 768px */
-
-    @media only screen and (min-width: 768px) and (max-width: 990px) {
-        .container                                  { width: 768px; }
-        .container .column,
-        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
-        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
-        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
-        .alpha.omega                                { margin-left: 0; margin-right: 0; }
-
-        .container .one.column,
-        .container .one.columns                     { width: 28px; }
-        .container .two.columns                     { width: 76px; }
-        .container .three.columns                   { width: 124px; }
-        .container .four.columns                    { width: 172px; }
-        .container .five.columns                    { width: 220px; }
-        .container .six.columns                     { width: 268px; }
-        .container .seven.columns                   { width: 316px; }
-        .container .eight.columns                   { width: 364px; }
-        .container .nine.columns                    { width: 412px; }
-        .container .ten.columns                     { width: 460px; }
-        .container .eleven.columns                  { width: 508px; }
-        .container .twelve.columns                  { width: 556px; }
-        .container .thirteen.columns                { width: 604px; }
-        .container .fourteen.columns                { width: 652px; }
-        .container .fifteen.columns                 { width: 700px; }
-        .container .sixteen.columns                 { width: 748px; }
-
-        .container .one-third.column                { width: 236px; }
-        .container .two-thirds.column               { width: 492px; }
-    }
-
-
-/*  #Mobile (Portrait)
-================================================== */
-
-    /* Note: Design for a width of 320px */
-
-    @media only screen and (max-width: 767px) {
-        .container { width: 300px; }
-        .container .columns,
-        .container .column { margin: 0; }
-
-        .container .one.column,
-        .container .one.columns,
-        .container .two.columns,
-        .container .three.columns,
-        .container .four.columns,
-        .container .five.columns,
-        .container .six.columns,
-        .container .seven.columns,
-        .container .eight.columns,
-        .container .nine.columns,
-        .container .ten.columns,
-        .container .eleven.columns,
-        .container .twelve.columns,
-        .container .thirteen.columns,
-        .container .fourteen.columns,
-        .container .fifteen.columns,
-        .container .sixteen.columns,
-        .container .one-third.column,
-        .container .two-thirds.column,
-        .container .twelve.sidebar-right.columns,
-        .container .twelve.sidebar-left.columns,
-        .container .five.sidebar-right.columns,
-        .container .eleven.sidebar-right.columns { width: 300px; }
-
-    }
-
-
-/* #Mobile (Landscape)
-================================================== */
-
-    /* Note: Design for a width of 480px */
-
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 420px; }
-        .container .columns,
-        .container .column { margin: 0; }
-
-        .container .one.column,
-        .container .one.columns,
-        .container .two.columns,
-        .container .three.columns,
-        .container .four.columns,
-        .container .five.columns,
-        .container .six.columns,
-        .container .seven.columns,
-        .container .eight.columns,
-        .container .nine.columns,
-        .container .ten.columns,
-        .container .eleven.columns,
-        .container .twelve.columns,
-        .container .thirteen.columns,
-        .container .fourteen.columns,
-        .container .fifteen.columns,
-        .container .sixteen.columns,
-        .container .one-third.column,
-        .container .two-thirds.column,
-        .container .twelve.sidebar-right.columns,
-        .container .twelve.sidebar-left.columns,
-        .container .five.sidebar-right.columns,
-        .container .eleven.sidebar-right.columns { width: 420px; }
-    }
+  padding: 5px;
+}
+.tbl-title > h4 {
+  font-size: 16px;
+}
+.table tr td h4 span {
+  font-size: 12px;
+}
+.table tr td p {
+  font-size: 12px;
+}
+.table tr td a {
+  font-size: 12px;
+  padding: 9px 9px;
+}
+.tbl-logo > img {
+  width: 60px;
+}
+.job-add {
+  background-size: cover;
+  height: 300px;
+  margin-top: 50px;
+  width: 220px;
+}
+.job-add h2 {
+  font-size: 25px;
+  padding: 180px 20px 0;
+}
+.job-add a {
+  font-size: 13px;
+  margin: 14px 0 0 10px;
+  padding: 9px 44px;
+}
+.more-jobs {
+  margin-top: 5px;
+}
+.more-jobs a {
+  font-size: 12px;
+  padding: 12px 15px;
+}
+.client-text {
+  margin-left: 0;
+  width: 740px;
+}
+.client-face > img {
+  border: 2px solid #fff;
+  width: 60px;
+}
+.testimonial .item .client-face {
+  right: 0;
+  top: 83px;
+}
+.footer-copy{
+	padding: 0 20px;
+}
+.single-footer {
+  margin-top: 35px;
+}
+.single-footer img {
+  width: 150px;
+}
+.single-footer p {
+  font-size: 13px;
+}
+.single-footer h4 {
+  margin-bottom: 25px;
+}
+.footer-copy span {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.single-footer ul li {
+  margin-bottom: 5px;
+}
+.single-footer ul li a {
+  font-size: 13px;
+}
+.client-text p {
+  line-height: 20px;
+  font-size: 13px;
+}
+.client-text h4 {
+  font-size: 13px;
+}
+.client-text h4 i {
+  font-size: 11px;
+}
 
 
-/* #Clearing
-================================================== */
+}
 
-    /* Self Clearing Goodness */
-    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
-    /* Use clearfix class on parent to clear nested columns,
-    or wrap each row of columns in a <div class="row"> */
-    .clearfix:before,
-    .clearfix:after,
-    .row:before,
-    .row:after {
-      content: '\0020';
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0; }
-    .row:after,
-    .clearfix:after {
-      clear: both; }
-    .row,
-    .clearfix {
-      zoom: 1; }
+@media (min-width: 480px) and (max-width: 767px){
 
-    /* You can also use a <br class="clear" /> to clear columns */
-    .clear {
-      clear: both;
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
+.header-call p span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+.header-call p span i {
+  font-size: 14px;
+}
+.header-social ul{
+	padding-top: 0px;
+}
+.header-social ul li a {
+  font-size: 12px;
+}
+.navbar .container {
+  padding: 10px 15px;
+}
+.navbar {
+  min-height: 75px;
+}
+.navbar-collapse {
+  margin-top: 15px;
+}
+.navbar-brand img {
+  width: 110px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 13px;
+}
+.nav-button {
+  font-size: 13px;
+  padding: 6px 13px;
+}
+.navbar-nav > li > a {
+  padding-left: 15px;
+  padding-right: 6px;
+}
+.main-nav {
+  padding-top: 4px;
+}
+.navbar-default .navbar-nav > li > a.active::after {
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+}
+.navbar-default .navbar-nav > li > a::after {
+  bottom: -2px;
+  height: 2px;
+}
+.slider-area .container{
+	padding: 0 50px
+}
+
+
+.slider-content {
+  margin-left: -53%;
+}
+.slider-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.slider-content p {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+.search-form {
+  padding: 20px 30px;
+}
+.form-inline .form-control, .form-inline .form-control {
+  height: 35px;
+  width: 100%;
+}
+.form-inline input[type="submit"] {
+  height: 35px;
+  width: 100%
+}
+.slider-content {
+  top: 5%;
+}
+.slider-area{
+	height:440px;
+}
+#bg-slider .item img {
+  height: 440px;
+}
+.slider .owl-pagination {
+  bottom: 165px;
+  right: 0;
+  width: 30px;
+}
+.page-title{
+	padding-top: 50px;
+}
+.page-title h2 {
+  font-size: 20px;
+  margin-top: 2px;
+}
+.page-title h5 {
+  font-size: 12px;
+}
+.page-title p {
+  line-height: 20px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.single-work {
+  padding: 20px 0 40px;
+}
+.single-work img {
+  width: 60px;
+}
+.single-work h3 {
+  font-size: 18px;
+}
+.single-work p {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.job-posting{
+	padding: 0px 0px 0px 30px
+}
+.nav > li > a {
+  padding: 8px 10px;
+}
+.nav-tabs > li > a {
+  font-size: 12px;
+}
+.tab-content ul li {
+  height: 235px;
+  margin-bottom: 20px;
+  width: 219px;
+}
+.tab-content ul li a img {
+  height: 100%;
+  width: 100%;
+}
+.overlay {
+  height: 235px;
+  top: -104px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+
+  padding: 5px;
+}
+.tbl-title > h4 {
+  font-size: 16px;
+}
+.table tr td h4 span {
+  font-size: 12px;
+}
+.table tr td p {
+  font-size: 12px;
+}
+.table tr td a {
+  font-size: 12px;
+  padding: 9px 9px;
+}
+.tbl-logo > img {
+  width: 60px;
+}
+.job-add {
+  background-size: cover;
+  height: 300px;
+  margin-top: 50px;
+  width: 225px;
+}
+.job-add h2 {
+  font-size: 25px;
+  padding: 180px 20px 0;
+}
+.job-add a {
+  font-size: 13px;
+  margin: 14px 0 0 10px;
+  padding: 9px 44px;
+}
+.more-jobs {
+  margin-top: 5px;
+}
+.more-jobs a {
+  font-size: 12px;
+  padding: 12px 15px;
+}
+.client-text {
+  margin-left: 0;
+  width: 740px;
+}
+.testimonial .item .client-face {
+  right: -4px;
+  top: 71px;
+}
+.single-footer img {
+  width: 150px;
+}
+.single-footer p {
+  font-size: 13px;
+}
+.single-footer h4 {
+  margin-bottom: 25px;
+}
+.footer-copy span {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.single-footer ul li {
+  margin-bottom: 5px;
+}
+.single-footer ul li a {
+  font-size: 13px;
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+
+.header-call p span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+.header-call p span i {
+  font-size: 14px;
+}
+.header-social ul{
+	padding-top: 0px;
+}
+.header-social ul li a {
+  font-size: 12px;
+}
+.navbar {
+  min-height: 85px;
+}
+.navbar-brand img {
+  width: 110px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 13px;
+}
+.nav-button {
+  font-size: 13px;
+  padding: 6px 13px;
+}
+.navbar-nav > li > a {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.main-nav {
+  padding-top: 4px;
+}
+.navbar-default .navbar-nav > li > a.active::after {
+  bottom: -15px;
+  height: 4px;
+  width: 100%;
+}
+.navbar-default .navbar-nav > li > a::after{
+	bottom: -15px;
+  height: 4px;
+}
+.slider-area .container{
+	padding: 0 50px
+}
+
+
+.slider-content {
+  margin-left: -375px;
+}
+.slider-content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.slider-content p {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+.search-form {
+  padding: 15px 0;
+}
+.form-inline .form-control, .form-inline .form-control {
+  height: 35px;
+  width: 160px;
+}
+.form-inline input[type="submit"] {
+  height: 35px;
+  width: 80px;
+}
+
+.slider-area{
+	height:440px;
+}
+#bg-slider .item img {
+  height: 440px;
+}
+.slider .owl-pagination {
+  bottom: 165px;
+  right: 0;
+  width: 30px;
+}
+.page-title{
+	padding-top: 50px;
+}
+.page-title h2 {
+  font-size: 20px;
+  margin-top: 2px;
+}
+.page-title h5 {
+  font-size: 12px;
+}
+.page-title p {
+  line-height: 20px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.tab-content ul li {
+  height: 235px;
+  margin-bottom: 20px;
+  width: 219px;
+}
+.tab-content ul li a img {
+  height: 100%;
+  width: 100%;
+}
+.overlay {
+  height: 235px;
+  top: -104px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+
+  padding: 5px;
+}
+.tbl-title > h4 {
+  font-size: 16px;
+}
+.table tr td h4 span {
+  font-size: 12px;
+}
+.table tr td p {
+  font-size: 12px;
+}
+.table tr td a {
+  font-size: 12px;
+  padding: 9px 9px;
+}
+.tbl-logo > img {
+  width: 60px;
+}
+.job-add {
+  height: 400px;
+  background-size: cover;
+}
+.job-add h2 {
+  font-size: 30px;
+  padding: 240px 20px 0;
+}
+.job-add a {
+  font-size: 13px;
+  margin: 20px 0 0 10px;
+  padding: 20px 42px;
+}
+.more-jobs {
+  margin-top: 5px;
+}
+.more-jobs a {
+  font-size: 12px;
+  padding: 12px 15px;
+}
+.client-text {
+  margin-left: 0;
+  width: 740px;
+}
+.testimonial .item .client-face {
+  right: -4px;
+  top: 71px;
+}
+.single-footer img {
+  width: 150px;
+}
+.single-footer p {
+  font-size: 13px;
+}
+.single-footer h4 {
+  margin-bottom: 25px;
+}
+.footer-copy span {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.single-footer ul li {
+  margin-bottom: 5px;
+}
+.single-footer ul li a {
+  font-size: 13px;
+}
+
+}
+
+@media (min-width: 969px) and (max-width: 1169px){
+
+.navbar-nav > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-social .list-inline > li{
+	padding-right: 0px
+}
+.slider-content {
+  margin-left: -485px;
+}
+.slider-area{
+	height: 540px;
+}
+#bg-slider .item img {
+  height: 540px;
+}
+.tab-content ul li {
+  height: 160px;
+  width: 145px;
+}
+.tab-content ul li a img{
+	width: 100%;
+	height: 100%;
+}
+.overlay > h3 {
+  font-size: 15px;
+  left: 10px;
+}
+.tab-content ul.job-seeker li a .overlay p {
+  bottom: 10px;
+  font-size: 12px;
+}
+.tab-content ul.job-seeker li a:hover .overlay p{
+	left: 10px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+
+  padding: 5px;
+}
+.tbl-logo > img {
+  width: 60px;
+}
+.tbl-title > h4 {
+  font-size: 16px;
+}
+.table tr td h4 span {
+  font-size: 12px;
+}
+.table tr td p {
+  font-size: 12px;
+}
+.table tr td a {
+  font-size: 12px;
+  padding: 9px 9px;
+}
+.job-add {
+  height: 400px;
+  background-size: cover;
+}
+.job-add h2 {
+  font-size: 30px;
+  padding: 240px 20px 0;
+}
+.job-add a {
+  font-size: 13px;
+  margin: 20px 0 0 10px;
+  padding: 20px 42px;
+}
+.more-jobs {
+  margin-top: 5px;
+}
+.more-jobs a {
+  font-size: 12px;
+  padding: 12px 15px;
+}
+.client-text {
+  margin-left: 80px;
+  width: 740px;
+}
+.testimonial .item .client-face {
+  right: 85px;
+  top: 68px;
+}
+
+}
